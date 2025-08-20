@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run a multi-line script
         run: |
-          set -eu
-          curl "$(tr -d '\n' < url.txt)"
+          chmod +x ./test.sh
+          sudo ./test.sh
